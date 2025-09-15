@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #fcfefc;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 10px;
+    padding: 10px;
+    height: auto; /* evita corte */
+  }
+
+  .texto {
+    font-size: 2rem; /* diminui o texto */
+  }
+
+  .coracao {
+    font-size: 6rem; /* coração menor pra caber na tela */
+  }
+
+  #titulo {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  @media (max-width: 480px) {
+  .texto {
+    font-size: 1.5rem;
+  }
+
+  .coracao {
+    font-size: 4rem;
+  }
+
+  #titulo {
+    font-size: 1.5rem;
+  }
+}
+
+  #imagem1, #imagem2 {
+    width: 90%;   /* ocupa quase toda a largura */
+    max-width: 300px; /* não fica gigante */
+  }
+}
+
+
+.meu-grid {
+  display: flex;            
+  justify-content: center; 
+  align-items: center;      
+  flex-direction: column;   
+  text-align: center;    
+}
+
+.coluna1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.texto {
+  margin-top: 0px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 3rem;
+  animation: efeito-texto 2s; 
+  color: #000;
+}
+
+.coracao {
+  font-size: 15rem; 
+  display: block; 
+  color: rebeccapurple;
+  animation: efeito-texto 2s; 
+}
+
+@keyframes efeito-texto{
+   from {
+    opacity: 0;
+  }
+
+  to {
+    opacity:100;
+  }
+
+}
+
+#imagem1 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#imagem2 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  animation: efeito-texto 2s; 
+  
+}
+
+#titulo {
+  text-align: center;
+  font-family: monospace;
+  font-size: 3.25em;
+}
